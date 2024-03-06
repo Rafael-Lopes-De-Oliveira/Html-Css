@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #daaf5ad8;
+}
+
+h1,h2,h3{
+
+    text-align: center;
+}
+
+img{
+    position: relative;
+    objectfit: cover;
+    object-position: center;
+    width: 15%;
+    left: 43%;  
+}
+
+p{
+    color: rgb(217, 247, 101);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.ter1:hover{
+   color: black;
+}
+
+
+
+
+
+
+
+

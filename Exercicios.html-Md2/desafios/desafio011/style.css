@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+#espaco{
+    width:auto;
+    
+    
+}
+
+#astronauta{
+    width: auto;
+    padding: auto;
+
+}
+
+main img{
+    text-align: center;
+}
+
+footer{
+    border: 5px solid black;
+    margin: auto;
+    padding: auto;  
+}
+footer  img{
+    margin: auto;
+    padding: auto;
+}
+
+.aa{
+    position: absolute;
+    
+}
+
+.bb{
+  position: relative;
+  display:inline;
+}
+
+
+
+ 

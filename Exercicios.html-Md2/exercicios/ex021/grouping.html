@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping em HTML</title>
+    <style>
+        body{
+            background-color: lightgray;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+        /*   CABEÇA DO CORPO DO SITE * HEADER *   */
+        header {
+            border-radius: 5px 5px;
+            height: 48px;
+            margin: -40px auto 41px auto;
+            padding: 10px 10px 10px 10px;
+            background-image: linear-gradient(to bottom, white ,black);
+        } 
+        .lista{
+            padding: auto auto auto auto;
+            margin: 31px 1px 1px 1px ;
+
+        }
+        header > nav >a {
+            text-decoration: none;
+            background-color: rgb(66, 181, 112);
+            color: white;
+            margin: 1px 194px 1px 1px;
+            padding: 3px 10px 6px 1px;
+        }
+        /* FIM HEADER /CABEÇA DO SITE */
+
+
+        /*  MEIO DO CORPO DO SITE  / CENTRO , * MAIN *     */
+        main {
+            width: 500px;
+            height: 500px;
+            color: white;
+            background-color: rgb(93, 86, 138);
+            margin: 115px auto 27px auto;
+            padding: 27px 1px 1px 1px;
+            border-radius: 10px 0;
+            box-shadow: 4px 4px 15px black;
+        }
+
+        .meio{
+           text-align: center;
+
+        }
+
+        .meio > aside{
+            text-indent: 10px;
+        }
+
+        .meio > section:hover{
+
+            color: blue;
+        }
+        
+        .meio > section > aside > p:hover{
+            color: red;
+        }
+
+        /*
+                Lista do canto "parece possuir erro"
+
+        .listleft > nav{
+            background-color: rgb(87, 56, 173);
+            width: 200px;
+            height: 200px;
+            margin: -374px 1px 1px -500px ;
+            padding: 247px 26px 72px 33px;
+        }
+
+        .listleft > nav > p {
+            display: inline-block;
+            color: black;
+            width: 116px;
+        } */
+
+
+        /* FIM CORPO / MAIN DO SITE */
+
+
+        /*  FOOTER   */
+        footer > p{
+            text-indent: 118px;
+            border: 2px solid black;
+            width: 489px;
+            margin: 10px auto ;
+            padding: 1px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="lista">
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section class="meio">
+            <section>Esportes
+                <aside>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit, obcaecati sunt a distinctio totam odit nulla nobis nam blanditiis in, quaerat ad aperiam nostrum. Beatae sint sunt blanditiis id quae!</p>
+                </aside>
+            </section>
+            <section>Esportistas
+                <aside>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias temporibus eligendi, explicabo asperiores eos id veritatis cupiditate, quos ut sed doloribus eius velit et odit voluptates officiis exercitationem sint accusantium?</p>
+                </aside>
+            </section>
+            <section>Materiais de Esporte
+                <aside>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et incidunt magnam officiis itaque ab quas, corporis porro eligendi atque, distinctio esse earum quos amet tenetur possimus autem nobis consequuntur ipsam!</p>
+                </aside>
+            </section>
+        </section>
+
+        <!-- 
+                Parte com possivel erro
+            
+            <section class="listleft">
+            <nav>
+                <p>Teste Test</p>
+                <p>Teste Test</p>
+                <p>Teste Test</p>
+                <p>Teste Test</p>
+                <p>Teste Test</p>
+            </nav>
+        </section> -->
+    </main>
+
+    <footer>
+        <p>nao sei o que escrever mas blz!!.</p>
+    </footer>
+    
+</body>
+</html>     
