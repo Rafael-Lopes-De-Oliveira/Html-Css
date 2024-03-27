@@ -4,37 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aleatorio</title>
-    <style>    
-    .opcoes{
-        background-color:black;
-        border-top-right-radius:5px ;
-        border-top-left-radius:5px ;
-        height: 25px;
+    <style>  
+    
+    *{
+        margin: 0px;
+        padding: 0px;
     }
-    .opcoes li{
-        display: inline;
-        padding-left: 35px;
+    main{
+        background-color: black;
+        display: grid;
     }
-
-    .opcoes li a{
-        text-decoration: none;
+    main a{
         color: white;
-        padding: 2px;
+        text-decoration: none;
+    }
+    .hp li> div>p{
+        display: none;
     }
 
-    .opcoes a:hover{
-        background-color: rgba(255, 255, 255, 0.592);
+    .opop{
+        grid-gap:50px;
+    }
+
+    .hp>li{
+        list-style: none;
+    }
+    .hp li:hover div>p{
+        display: block;
+    }
+    .hp li> div{
+        width: 90px;
+        background-color: rgb(72, 72, 149);
+    }
+    .hp li> div>p::before{
+        content: '⦁';
     }
 </style>
 </head>
-<body>
-    <Main>
-        <ul class="opcoes">
-            <li><a href="#">Analises</a></li>
-            <li><a href="#">Ambientes</a></li>
-            <li><a href="#">Associados</a></li>
-            <li><a href="#">Links</a></li>
-            <li><a href="#">Sobre Nos</a></li>
-        </ul>
+<body> 
+
+
+    <main  class="hp" clastyle="margin-top: 100px;">
+        <li class="opop"><a href="#">Analises</a>
+            <div>
+                <p> Analises</p>
+                <p> Ambientes</p>
+                <p> Associados</p>
+                <p> Links</p>
+            </div>
+        </li>
+
+        <li class="opop"><a href="#">Sobre Nos</a>
+            <div>
+                <p> 1234</p>
+                <p> 1234</p>
+                <p> 1234</p>
+                <p> 1234</p>
+            </div>
+        </li>
+
+        <li class="opop"><a href="#">Sobre Nos</a>
+            <div>
+                <p> 1234</p>
+                <p> 1234</p>
+                <p> 1234</p>
+                <p> 1234</p>
+            </div>
+        </li>
+    </main>
 </body>
 </html>
