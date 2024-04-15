@@ -26,6 +26,7 @@
             border-collapse: collapse;
             margin: auto;
             width: 500px;
+            position: relative;
         }
 
         caption{
@@ -36,9 +37,18 @@
             color: white;
         }
 
-        thead{
+        thead>tr>th{
             font-weight: bolder;
             font-size: 1.2em;
+            position: sticky;
+            top: -1px;
+            background-color: rgb(124, 119, 119);
+        }
+
+        thead >tr > td , tfoot >tr > td{
+            background-color: white;
+            color: black;
+            font-size: 17px;
         }
 
         tfoot{
@@ -49,13 +59,26 @@
             text-align: right;
         }
 
-        tfoot td{
-            text-align: center;
+        tfoot>tr>td{
+            font-size:17px;
         }
+
+        tfoot>tr>td:nth-child(n+2){
+            text-align: right;
+           
+        }
+
 
         thead, tfoot{
             background-color: rgb(124, 119, 119);
             color: white;
+        }
+
+        section{
+            width: 600px;
+            text-align: center;
+            margin: 50px auto;
+            background-color: rgb(108, 108, 180);
         }
 
     </style>
@@ -77,7 +100,7 @@
         <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th scope="col" style="width:30px;">Posição</th>
+                <td scope="col" style="width:14px;">0</td>
 
                 <th scope="col" style="width:160px;">Estado</th>
 
@@ -249,10 +272,37 @@
 
         <tfoot>
             <tr>
+                <td>28</td>
                 <th scope="row">População Total</th>
                 <td>210 147 125</td>
             </tr>
         </tfoot>
     </table>
+
+    <section>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus et a doloribus fugiat, aperiam placeat?
+            Aperiam saepe repudiandae eum sint sunt unde reiciendis delectus excepturi, sequi optio dicta magni corporis voluptatem illo numquam recusandae dolore molestiae? Aliquam consequatur cum porro amet? Assumenda pariatur    incidunt iure!
+            Aperiam, doloremque earum. Deserunt fugiat minima ut sapiente nesciunt nisi. Qui quam veritatis nulla velit natus.  Explicabo eos amet esse distinctio iste sed obcaecati optio, vitae natus neque, animi tempore.
+            Dolorum animi blanditiis provident voluptate explicabo aspernatur quam consequuntur ratione, iure exercitationem    officia sapiente quia quaerat totam quisquam deserunt ducimus dolore, voluptates tempora vitae assumenda natus     consequatur? Possimus, veniam ea.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus et a doloribus fugiat, aperiam placeat?
+            Aperiam saepe repudiandae eum sint sunt unde reiciendis delectus excepturi, sequi optio dicta magni corporis voluptatem illo numquam recusandae dolore molestiae? Aliquam consequatur cum porro amet? Assumenda pariatur incidunt iure!
+            Aperiam, doloremque earum. Deserunt fugiat minima ut sapiente nesciunt nisi. Qui quam veritatis nulla velit natus. Explicabo eos amet esse distinctio iste sed obcaecati optio, vitae natus neque, animi tempore.
+            Dolorum animi blanditiis provident voluptate explicabo aspernatur quam consequuntur ratione, iure exercitationem officia sapiente quia quaerat totam quisquam deserunt ducimus dolore, voluptates tempora vitae assumenda natus consequatur? Possimus, veniam ea.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus et a doloribus fugiat, aperiam placeat?
+            Aperiam saepe repudiandae eum sint sunt unde reiciendis delectus excepturi, sequi optio dicta magni corporis voluptatem illo numquam recusandae dolore molestiae? Aliquam consequatur cum porro amet? Assumenda pariatur incidunt iure!
+            Aperiam, doloremque earum. Deserunt fugiat minima ut sapiente nesciunt nisi. Qui quam veritatis nulla velit natus. Explicabo eos amet esse distinctio iste sed obcaecati optio, vitae natus neque, animi tempore.
+            Dolorum animi blanditiis provident voluptate explicabo aspernatur quam consequuntur ratione, iure exercitationem officia sapiente quia quaerat totam quisquam deserunt ducimus dolore, voluptates tempora vitae assumenda natus consequatur? Possimus, veniam ea.
+        </p>
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus et a doloribus fugiat, aperiam
+             Aperiam saepe repudiandae eum sint sunt unde reiciendis delectus excepturi, sequi optio dicta magni corporis   voluptatem illo numquam recusandae dolore molestiae? Aliquam consequatur cum porro amet? Assumenda pariatur   incidunt iure!
+            Aperiam, doloremque earum. Deserunt fugiat minima ut sapiente nesciunt nisi. Qui quam veritatis nulla velit natus. Explicabo eos amet esse distinctio iste sed obcaecati optio, vitae natus neque, animi tempore.
+            Dolorum animi blanditiis provident voluptate explicabo aspernatur quam consequuntur ratione, iureexercitationem officia sapiente quia quaerat totam quisquam deserunt ducimus dolore, voluptates tempora vitae assumenda natus consequatur? Possimus, veniam ea.
+        </p>
+    </section>
+
+        
 </body>
 </html>
