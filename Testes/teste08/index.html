@@ -1,0 +1,52 @@
+<!DOCTYdivE html>
+<html lang="divt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewdivort" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .but01{
+            position: relative;
+            width:100px;
+            height: 35px;
+            background-color: rgb(91, 91, 229);
+            border: 0px 0px 0px black;
+
+        }
+
+        .but01>a{
+            color: white;
+            text-decoration: none;
+            padding: 16px 46px;
+        }
+
+        .but01:hover{
+            border: 1px solid rgb(14, 200, 221);
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.534);
+            transform: translate(3px, 3px);
+            transition: transform 0.3s, border 0.3 ;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste</h1>
+    <form action="" method="post" autocomplete="on">
+        <div>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome" autocomplete="name" required>
+        </div>
+        <div>
+            <label for="isenha">Senha:</label>
+            <input type="password" name="senha" id="isenha" required autocomplete="current-password">
+        </div>
+        <div class="but01">
+            <button type="submit"><a href="pag02.html" target="_blank"></a></button>
+        </div>
+    </form>
+</body>
+</html>
