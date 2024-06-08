@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: rgb(180, 177, 177);
+    width: 100vw;
+}
+
+header{
+    background-color: grey;
+}
+
+header h1{
+    text-align: center;
+}
+
+header li{
+    display: inline-block;
+    margin-left: 10px;
+    background-color: darkgray;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+}
+
+main{
+    margin: 20px auto;
+    width: 600px;
+    background-color: rgb(155, 145, 145);
+}
+
+main h2{
+    text-align: center;
+}
+
+main p{
+    text-indent: 10px;
+    text-align: center;
+    padding-bottom: 10px;
+}
