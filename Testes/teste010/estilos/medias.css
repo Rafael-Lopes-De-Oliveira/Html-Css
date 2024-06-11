@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+@media screen and (min-width:600px){
+
+    nav>ul>li{
+        display: block;
+        padding: 7px;
+        text-align: center;
+        background-color: grey;
+        border: 1px solid rgb(86, 85, 85);
+    }
+    
+    nav>ul>li:hover{
+        background-color: rgb(162, 159, 159);
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:768px) {
+
+    body,html{
+        width: 97.5vw;
+    }
+
+    header{
+        width: 97.4vw;
+    }
+
+    main{
+        width: 400px;
+        margin: auto;
+        margin-bottom: 20px ;
+        
+    }
+}
+
+@media screen and (min-width:768px) {
+
+    main{
+        width: 600px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    
+    main h1{
+        color: white;
+    }
+
+}
