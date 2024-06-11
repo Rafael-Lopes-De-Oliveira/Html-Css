@@ -54,7 +54,7 @@ menu >ul>li>a{
 }
 
 menu > ul>li>a:hover{
-    background-color: rgb(180, 174, 174);
+    background-color: rgb(130, 105, 105);
 }
 
 main{
@@ -68,6 +68,7 @@ main{
 
 article > h2{
     padding-bottom: 20px;
+    text-align: center;
 }
 
 article > p{
