@@ -3,6 +3,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
@@ -16,33 +17,61 @@ header{
 
 header h1{
     text-align: center;
+    padding: 10px;
 }
 
-header li{
-    display: inline-block;
-    margin-left: 10px;
-    background-color: darkgray;
-    padding: 7px;
-    border-radius: 5px;
+i#burguer{
+    background-color: rgb(71, 71, 71);
+    width: 100vw;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
 }
 
-header a{
+i#burguer:hover{
+    background-color: white;
+    color: black;
+}
+
+menu{
+    display: none;
+}
+
+menu ul{
+    list-style-type: none;
+}
+
+menu >ul>li>a{
+    display: block;
     text-decoration: none;
     color: white;
+    padding: 10px;
+    text-align: center;
+    background-color: lightslategray;
+    color: white;
+    border-top: 2px solid rgba(68, 65, 65, 0.603);
+}
+
+menu > ul>li>a:hover{
+    background-color: rgb(180, 174, 174);
 }
 
 main{
     margin: 20px auto;
-    width: 600px;
-    background-color: rgb(155, 145, 145);
+    width: 90vw;
+    background-color:white;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 10px;
 }
 
-main h2{
-    text-align: center;
+article > h2{
+    padding-bottom: 20px;
 }
 
-main p{
-    text-indent: 10px;
-    text-align: center;
-    padding-bottom: 10px;
+article > p{
+    text-align: justify;
+    margin-bottom: 20px;
+    text-indent: 15px;
 }
