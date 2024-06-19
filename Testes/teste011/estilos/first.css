@@ -11,24 +11,41 @@
     font-size: 1.7em;
 }
 
+:root{
+    --cor01:red;
+    --cor02:rgb(185, 10, 10);
+    --cor03:#450706;
+    --cor04:white;
+    --cor05:black;
+}
+
 body,html{
     height: 100vh;
     width: 100vw;
     text-align: center;
-    background-color: rgb(144, 144, 188);
+    background-color: var(--cor03);
 }
 
 header{
-    background-color: rgb(185, 10, 10);
-    color: white;
+    background-color:var(--cor02) ;
     text-align: center;
-    font-size: 1.3em;
     height: 80px;
     padding-top: 10px;
 }
 
+header>h1{
+    color: var(--cor04);
+    font-size: 2.3em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 main{
     width: 100vw;
+}
+
+main h1{
+    background-color: var(--cor05);
+    color: white;
 }
 
 img{
@@ -37,46 +54,61 @@ img{
     height: 120px;
 }
 
-#importados{
-    border: 1px solid black;
+.nome, .valor{
+    padding: 3px;
+    width: 98.5%;
 }
 
+.nome{
+    background-color: var(--cor05);
+    color: white;
+    padding: 3px;
+}
+
+.valor{
+    background-color: var(--cor01);
+    color: darkgrey;
+}
 
 section#importados > div{
     margin: 16px auto 30px auto;
     width:340px ;
     height: 200px;
-    border: 1px solid black;
+    border: 1px solid  var(--cor05);
     display: block;
     
 }
 
 section#populares{
-    border: 1px solid black;
+    border: 1px solid var(--cor05);
 }
 
 section#populares > div{
     margin: 16px auto 30px auto;
     width:340px ;
     height: 200px;
-    border: 1px solid black;
+    border: 1px solid var(--cor05);
     display: block;
 }
 
+#importados,{
+    border: 1px solid var(--cor05);
+
+}
 section#baratos{
-    border: 1px solid black;
+    border: 1px solid var(--cor05);
 }
 
 section#baratos > div{
     margin: 16px auto 30px auto;
     width:340px ;
     height: 200px;
-    border: 1px solid black;
+    border: 1px solid var(--cor05);
     display: block; 
 }
 
 footer{
-    background-color: black;
+    background-color: var(--cor05);
     height: 90px;
     color: white;
     padding-top: 10px;
