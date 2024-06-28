@@ -16,8 +16,8 @@
     --cor02:rgb(185, 10, 10);
     --cor03:#450706;
     --cor03-5:#640c0b;
-    --cor04:white;
-    --cor05:black;
+    --cor04wh:white;
+    --cor05bl:black;
 }
 
 body,html{
@@ -35,7 +35,7 @@ header{
 }
 
 header>h1{
-    color: var(--cor04);
+    color: var(--cor04wh);
     font-size: 2.3em;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -54,7 +54,7 @@ main{
 }
 
 main h1{
-    background-color: var(--cor05);
+    background-color: var(--cor05bl);
     color: white;
 }
 
@@ -71,7 +71,7 @@ img{
 }
 
 .nome{
-    background-color: var(--cor05);
+    background-color: var(--cor05bl);
     color: white;
     padding: 3px;
     margin-bottom: 2px;
@@ -79,7 +79,7 @@ img{
 
 .valor{
     background-color: var(--cor01);
-    color: darkgrey;
+    color: rgba(57, 55, 55, 0.663);
     border-radius: 4px;
     box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.648);
 }
@@ -87,7 +87,7 @@ img{
 .valor:hover{
     background-color:var(--cor03-5) ;
     box-shadow: inset 0px 0px -10px  rgba(0, 0, 0, 0.529);
-    color: var(--cor04);
+    color: var(--cor04wh);
     transition: background-color 0.2s, color 0.3s, margin-top 0.2s;
     padding-bottom: 3px;
     margin-top: 3px;
@@ -102,47 +102,37 @@ section#importados > div{
     
 }
 
-section#populares{
-    border: 1px solid var(--cor05);
-}
 
 section#populares > div{
     margin: 16px auto 30px auto;
     width:340px ;
     height: 200px;
-    border: 1px solid var(--cor05);
     display: block;
 }
 
-#importados{
-    border: 1px solid var(--cor05);
-
-}
 section#baratos{
-    border: 1px solid var(--cor05);
+    border: 1px solid var(--cor05bl);
 }
 
 section#baratos > div{
     margin: 16px auto 30px auto;
     width:340px ;
     height: 200px;
-    border: 1px solid var(--cor05);
+    border: 1px solid var(--cor05bl);
     display: block; 
 }
 
 footer{
-    background-color: var(--cor05);
-    height: 90px;
+    background-color: var(--cor05bl);
+    color: var(--cor04wh);
+}
+
+footer a{
+    text-decoration: none;
     color: white;
-    padding-top: 10px;
-    border-radius: 2px;
-    margin-top: 15px;
 }
 
-footer > h2{
-    font-size: 0.8em;
-}
-
-footer > p{
-    font-size: 0.7em;
+footer a:hover{
+    color: yellow;
+    text-decoration: underline;
 }
